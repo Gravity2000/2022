@@ -1,3 +1,5 @@
+package JDBC;
+
 import com.mysql.jdbc.Driver;
 
 import java.sql.Connection;
@@ -12,7 +14,7 @@ public class JDBCdemo {
         Class.forName("com.mysql.jdbc.Driver");
 
         //2、获取连接
-        String url="jdbc:mysql://localhost:3306/db1";
+        String url="jdbc:mysql://localhost:3306/db1?useSSL=false";
         String username="root";
         String password="1234";
         Connection conn=DriverManager.getConnection(url, username, password);
